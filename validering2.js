@@ -92,3 +92,43 @@ function validerRegistrerKlasse()
 
 
 
+function valideringGyldigStudent()
+{
+  var Brukernavn = document.getElementById ('Brukernavn').value;
+  var Fornavn = document.getElementById ('Fornavn').value;
+  var Etternavn = document.getElementById ('Etternavn').value;
+  var klassekode = document.getElementById ('klassekode').value;
+  var msg = document.getElementById ('valideringmelding');
+  
+  
+  var lovligKlassekode=validerKlassekode(klassekode);
+
+  var feilmelding="";
+
+   if (!lovligKlassekode)  /* klassekode er ikke korrekt fylt ut */
+    {
+        feilmelding="Klassekode er ikke korrekt fylt ut <br />";
+    }
+    
+  var lovligstudent=true;
+  
+  if (Brukernavn=="" || Fornavn=="" || Etternavn=="")
+  {
+      feilmelding=feilmelding + "Fyll ut brukernavn, fornavn, etternavn er du snill. -Javascript valideringen";
+    
+    lovligstudent=false;
+  }
+  
+
+  if (lovligKlassekode && lovligstudent)  /* alle felt er korrekt fylt ut */
+    {
+        return true;
+    }
+  else
+    {
+    msg.style.color="red";
+        msg.innerHTML=feilmelding;  
+        return false;
+    }
+}
+

@@ -5,11 +5,11 @@ include ("start.html");
 <head> <script src="registrer-student.js"> </script> </head>
 <h3> Registrer Student </h3>
 <form method="post" action="" id="Mittskjema" name="Mittskjema" onSubmit="return valideringGyldigStudent()" >
-	Brukernavn <input type="text" id="Brukernavn" name="Brukernavn" onFocus="fokus(this)" onBlur="mistetFokus(this)" onMouseOver="musInn(this)" onMouseOut="musUt()" required//> <br />
+	Brukernavn <input type="text" id="Brukernavn" name="Brukernavn" onFocus="fokus(this)" onBlur="mistetFokus(this)" onMouseOver="musInn(this)" onMouseOut="musUt()" required/> <br />
 	Fornavn <input type="text" id="Fornavn" name="Fornavn" onFocus="fokus(this)" onBlur="mistetFokus(this)" onMouseOver="musInn(this)" onMouseOut="musUt()" required/> <br />
 	Etternavn <input type="text" id="Etternavn" name="Etternavn" onFocus="fokus(this)" onBlur="mistetFokus(this)" onMouseOver="musInn(this)" onMouseOut="musUt()" required/> <br />
-	Klassekode <input type="text" id="klassekode" name="klassekode" onFocus="fokus(this)" onBlur="mistetFokus(this)" onMouseOver="musInn(this)" onMouseOut="musUt()" onKeyUp="vis(this.value)"required/> <br />
-	<input type="submit" value="Registrer"  id="Registrer" name="Registrer" onSubmit="valideringGyldigStudent()" />
+	Klassekode <input type="text" id="klassekode" name="klassekode" onFocus="fokus(this)" onBlur="mistetFokus(this)" onMouseOver="musInn(this)" onMouseOut="musUt()" onKeyUp="vis(this.value)" required/> <br />
+	<input type="submit" value="Registrer"  id="Registrer" name="Registrer" />
 	<input type="reset"  value="Nullstill"  id="Nullstill" name="Nullstill" onClick="fjernMelding()"/>
 	<div id="valideringmelding"></div>
 	<div id="hendelsesmelding"></div>
