@@ -2,7 +2,6 @@
 
 include ("start.html");
 ?>
-<head> <script src="registrer-student.js"> </script> </head>
 <h3> Registrer Student </h3>
 <form method="post" action="" id="Mittskjema" name="Mittskjema" onSubmit="return valideringGyldigStudent()" >
 	Brukernavn <input type="text" id="Brukernavn" name="Brukernavn" onFocus="fokus(this)" onBlur="mistetFokus(this)" onMouseOver="musInn(this)" onMouseOut="musUt()" required/> <br />
@@ -13,6 +12,7 @@ include ("start.html");
 	<input type="reset"  value="Nullstill"  id="Nullstill" name="Nullstill" onClick="fjernMelding()"/>
 	<div id="valideringmelding"></div>
 	<div id="hendelsesmelding"></div>
+	<div id="melding"></div>
 </form>
 
 <?php

@@ -98,7 +98,7 @@ function valideringGyldigStudent()
   var Fornavn = document.getElementById ('Fornavn').value;
   var Etternavn = document.getElementById ('Etternavn').value;
   var klassekode = document.getElementById ('klassekode').value;
-  var msg = document.getElementById ('valideringmelding');
+  var msg = document.getElementById('valideringmelding');
   
   
   var lovligKlassekode=validerKlassekode(klassekode);
@@ -126,7 +126,7 @@ function valideringGyldigStudent()
     }
   else
     {
-    msg.style.color="red";
+        msg.style.color="red";
         msg.innerHTML=feilmelding;  
         return false;
     }

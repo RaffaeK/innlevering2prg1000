@@ -7,8 +7,8 @@ include ("start.html");
 ?> 
 <h3>Registrer klasse </h3>
 	<form method="post" action="" id="Mittskjema" name="Mittskjema" onSubmit="return validerRegistrerKlasse();">
-	Klassekode <input type="text" id="klassekode" name="klassekode" onFocus="fokus(this)" onBlur="mistetFokus(this)" onMouseOver="musInn(this)" onMouseOut="musUt()" onChange="endreTilStoreBokstaver(this)" /> <br />
-	Klassenavn <input type="text" id="klassenavn" name="klassenavn" onFocus="fokus(this)" onBlur="mistetFokus(this)" onMouseOver="musInn(this)" onMouseOut="musUt()" /> <br />
+	Klassekode <input type="text" id="klassekode" name="klassekode" onFocus="fokus(this)" onBlur="mistetFokus(this)" onMouseOver="musInn(this)" onMouseOut="musUt()" onChange="endreTilStoreBokstaver(this)" required="" /> <br />
+	Klassenavn <input type="text" id="klassenavn" name="klassenavn" onFocus="fokus(this)" onBlur="mistetFokus(this)" onMouseOver="musInn(this)" onMouseOut="musUt()" required="" /> <br />
 	<input type="submit" value="Registrer"  id="Registrer" name="Registrer" />
 	<input type="reset"  value="Nullstill"  id="Nullstill" name="Nullstill"/>
 	<div id="melding"></div>
